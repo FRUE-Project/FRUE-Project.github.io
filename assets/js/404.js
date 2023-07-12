@@ -39,7 +39,7 @@ if (window.location.href.startsWith("https://frue-project.github.io/de/") || lan
 } else if (window.location.href.startsWith("https://frue-project.github.io/fr/") || language === "fr" || language === "fr-FR") {
     frueNavLogoHeading.href = "/fr/";
     frueNavLogoHeading.innerHTML = `
-            <img src="../assets/imgs/frue-logo.png" alt="Logo du projet FRUE">
+            <img src="https://frue-project.github.io/assets/imgs/frue-logo.png" alt="Logo du projet FRUE">
             Projet FRUE
         `;
 
@@ -66,7 +66,7 @@ if (window.location.href.startsWith("https://frue-project.github.io/de/") || lan
 } else {
     frueNavLogoHeading.href = "/en/";
     frueNavLogoHeading.innerHTML = `
-            <img src="../assets/imgs/frue-logo.png" alt="FRUE Project Logo">
+            <img src="https://frue-project.github.io/assets/imgs/frue-logo.png" alt="FRUE Project Logo">
             FRUE Project
         `;
 
