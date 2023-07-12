@@ -13,7 +13,7 @@ var docTitle = document.getElementsByTagName("title")[0];
 if (window.location.href.startsWith("https://frue-project.github.io/de/") || language === "de" || language === "de-DE") {
     frueNavLogoHeading.href = "/de/";
     frueNavLogoHeading.innerHTML = `
-            <img src="../assets/imgs/frue-logo.png" alt="FRUE Projekt Logo">
+            <img src="https://frue-project.github.io/assets/imgs/frue-logo.png" alt="FRUE Projekt Logo">
             FRUE Projekt
         `;
 
