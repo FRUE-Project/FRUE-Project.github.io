@@ -98,3 +98,11 @@ if (window.location.href.startsWith("https://frue-project.github.io/de/") || lan
 
     docTitle.innerHTML = "404 &middot; Page not found";
 }
+
+if (window.location.href.startsWith("https://frue-project.github.io/wiki/") && (language === "de" || language === "de-DE")) {
+    window.location.href = "https://frue-project.github.io/de/wiki/";
+} else if (window.location.href.startsWith("https://frue-project.github.io/wiki/") && (language === "fr" || language === "fr-FR")) {
+    window.location.href = "https://frue-project.github.io/fr/wiki/";
+} else if (window.location.href.startsWith("https://frue-project.github.io/wiki/")) {
+    window.location.href = "https://frue-project.github.io/en/wiki/";
+}
