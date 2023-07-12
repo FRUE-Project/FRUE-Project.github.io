@@ -8,6 +8,7 @@ var openFRUEProjectSidebarLink = document.getElementById("openFRUEProjectSidebar
 var homeNavBtn = document.getElementById("homeNavBtn");
 var heading404Title = document.getElementById("content-title");
 var description404Body = document.getElementById("content-description");
+var docTitle = document.getElementsByTagName("title")[0];
 
 if (window.location.href.startsWith("https://frue-project.github.io/de/") || language === "de" || language === "de-DE") {
     frueNavLogoHeading.href = "/de/";
@@ -36,6 +37,8 @@ if (window.location.href.startsWith("https://frue-project.github.io/de/") || lan
 
     heading404Title.innerHTML = "404 &middot; Seite nicht gefunden";
     description404Body.innerHTML = "Die angeforderte Seite wurde nicht gefunden. Bitte überprüfen Sie die URL auf Tippfehler und versuchen Sie es erneut.";
+
+    docTitle.innerHTML = "404 &middot; Seite nicht gefunden";
 } else if (window.location.href.startsWith("https://frue-project.github.io/fr/") || language === "fr" || language === "fr-FR") {
     frueNavLogoHeading.href = "/fr/";
     frueNavLogoHeading.innerHTML = `
@@ -63,6 +66,8 @@ if (window.location.href.startsWith("https://frue-project.github.io/de/") || lan
 
     heading404Title.innerHTML = "404 &middot; Page non trouvée";
     description404Body.innerHTML = "La page demandée n'a pas été trouvée. Veuillez vérifier l'URL pour les fautes de frappe et réessayer.";
+
+    docTitle.innerHTML = "404 &middot; Page non trouvée";
 } else {
     frueNavLogoHeading.href = "/en/";
     frueNavLogoHeading.innerHTML = `
@@ -90,4 +95,6 @@ if (window.location.href.startsWith("https://frue-project.github.io/de/") || lan
 
     heading404Title.innerHTML = "404 &middot; Page not found";
     description404Body.innerHTML = "The requested page was not found. Please check the URL for typos and try again.";
+
+    docTitle.innerHTML = "404 &middot; Page not found";
 }
