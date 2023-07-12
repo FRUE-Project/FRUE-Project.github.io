@@ -9,7 +9,7 @@ var homeNavBtn = document.getElementById("homeNavBtn");
 var heading404Title = document.getElementById("content-title");
 var description404Body = document.getElementById("content-description");
 
-if (window.location.href.startsWith("/de/") || language === "de" || language === "de-DE") {
+if (window.location.href.startsWith("https://frue-project.github.io/de/") || language === "de" || language === "de-DE") {
     frueNavLogoHeading.href = "/de/";
     frueNavLogoHeading.innerHTML = `
             <img src="../assets/imgs/frue-logo.png" alt="FRUE Projekt Logo">
@@ -36,7 +36,7 @@ if (window.location.href.startsWith("/de/") || language === "de" || language ===
 
     heading404Title.innerHTML = "404 &middot; Seite nicht gefunden";
     description404Body.innerHTML = "Die angeforderte Seite wurde nicht gefunden. Bitte überprüfen Sie die URL auf Tippfehler und versuchen Sie es erneut.";
-} else if (window.location.href.startsWith("/fr/") || language === "fr" || language === "fr-FR") {
+} else if (window.location.href.startsWith("https://frue-project.github.io/fr/") || language === "fr" || language === "fr-FR") {
     frueNavLogoHeading.href = "/fr/";
     frueNavLogoHeading.innerHTML = `
             <img src="../assets/imgs/frue-logo.png" alt="Logo du projet FRUE">
