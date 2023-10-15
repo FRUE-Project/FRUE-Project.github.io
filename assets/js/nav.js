@@ -1,4 +1,5 @@
 const sidebarToggle = document.getElementById("sidebarToggle");
+const sidebarToggleIcon = document.getElementById("sidebarToggleIcon");
 const sidebarContent = document.getElementById("sidebarContent");
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -21,9 +22,16 @@ sidebarToggle.addEventListener("click", function (event) {
         localStorage.setItem("sidebar-open", "false");
         sidebarContent.classList.add("sidebar-untoggled");
     }
+
+    if (sidebarToggleIcon.src === "https://frue-project.github.io/assets/imgs/sidebar-toggle.svg") {
+        sidebarToggleIcon.src = "https://frue-project.github.io/assets/imgs/sidebar-untoggle.svg";
+    } else {
+        sidebarToggleIcon.src = "https://frue-project.github.io/assets/imgs/sidebar-toggle.svg";
+    }
 });
 
 const navToggle = document.getElementById("navbarToggle");
+const navToggleIcon = document.getElementById("navbarToggleIcon");
 const navContent = document.getElementById("navbarContent");
 
 navToggle.addEventListener("click", function (event) {
@@ -32,6 +40,12 @@ navToggle.addEventListener("click", function (event) {
         navContent.classList.remove("navbar-collapsed");
     } else {
         navContent.classList.add("navbar-collapsed");
+    }
+
+    if (navToggleIcon.src === "https://frue-project.github.io/assets/imgs/navbar-toggle.svg") {
+        navToggleIcon.src = "https://frue-project.github.io/assets/imgs/navbar-untoggle.svg";
+    } else {
+        navToggleIcon.src = "https://frue-project.github.io/assets/imgs/navbar-toggle.svg";
     }
 });
 
